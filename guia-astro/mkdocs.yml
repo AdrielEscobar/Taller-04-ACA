@@ -1,0 +1,71 @@
+site_name: Guía de instalación de Astro
+site_description: Documentación técnica para instalar, verificar y dar los primeros pasos con Astro.
+site_author: Adriel Alexander Escobar Gutierrez
+
+# ----------------------------------------------------------------------
+# Tema: Material for MkDocs
+# ----------------------------------------------------------------------
+theme:
+  name: material
+  language: es
+  logo: img/logo.png
+  favicon: img/logo.png
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: orange
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: orange
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo claro
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.footer
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+
+# ----------------------------------------------------------------------
+# Navegación
+# ----------------------------------------------------------------------
+nav:
+  - Inicio: index.md
+  - Requisitos previos: requisitos.md
+  - Instalación: instalacion.md
+  - Verificación y problemas: verificacion.md
+
+# ----------------------------------------------------------------------
+# Plugins
+# ----------------------------------------------------------------------
+plugins:
+  - search
+
+# ----------------------------------------------------------------------
+# Extensiones de Markdown (pymdown-extensions)
+# ----------------------------------------------------------------------
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      permalink: "#"
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
